@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Meta tegs -->
+    <meta name="description" content="MyShop onlayn do‘koni: kiyim-kechak, gadjetlar va boshqa mahsulotlarni toping!">
+    <meta name="keywords" content="onlayn do‘kon, kiyim, gadjetlar, elektronika, myshop , websitedesign, websitedevelopment, webstore">
+    <meta property="og:title" content="MyShop – Onlayn Do‘kon">
+    <meta property="og:description" content="Kiyim-kechak, gadjetlar va boshqa mahsulotlar MyShop’da!">
+    <meta property="og:image" content="https://example.com/preview-image.jpg">
+    <meta property="og:url" content="https://myshop.com">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Favicon  -->
+    <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Api-Shop" />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
+
+    <!-- Style link -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Font link  -->
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- Title  -->
+    <title>Api-Shop</title>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="" class="header__logo">
+                    <img src="/images/logo.avif" alt="logo">
+                    <span>Api-Shop</span>
+                </a>
+                <nav class="header__menu">
+                    <ul class="header__list">
+                        <li class="header__list-item">
+                            <a href="#home" class="header__list-item-link">Home</a>
+                        </li>
+                        <li class="header__list-item">
+                            <a href="#products" class="header__list-item-link">Products</a>
+                        </li>
+                        <li class="header__list-item">
+                            <a href="#about" class="header__list-item-link">About</a>
+                        </li>
+                        <li class="header__list-item">
+                            <a href="#contacts" class="header__list-item-link">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__box">
+                    <a href="/page/login.html" class="header__box-link">Login</a>
+                    <a href="/page/register.html" class="header__box-link">Register</a>
+                </div>  
+                <div class="header__menu">
+                    <input type="text" class="header__input" placeholder="Search" id="search">
+                    <div class="header__cart">
+                        <p class="header__cart-count" id="cart-count"></p>
+                        <a href="/page/basket.html" class="header__link">
+                            <svg class="header__cart-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12.0049 2C15.3186 2 18.0049 4.68629 18.0049 8V9H22.0049V11H20.8379L20.0813 20.083C20.0381 20.6013 19.6048 21 19.0847 21H4.92502C4.40493 21 3.97166 20.6013 3.92847 20.083L3.17088 11H2.00488V9H6.00488V8C6.00488 4.68629 8.69117 2 12.0049 2ZM18.8309 11H5.17788L5.84488 19H18.1639L18.8309 11ZM13.0049 13V17H11.0049V13H13.0049ZM9.00488 13V17H7.00488V13H9.00488ZM17.0049 13V17H15.0049V13H17.0049ZM12.0049 4C9.86269 4 8.1138 5.68397 8.00978 7.80036L8.00488 8V9H16.0049V8C16.0049 5.8578 14.3209 4.10892 12.2045 4.0049L12.0049 4Z"></path></svg>
+                        </a>
+                    </div>
+                    <button class="header__logout" id="logout" >Logout</button>
+                </div>
+                <div class="header__burger" id="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main  -->
+    <main id="products">
+        <h1>Welcome to Api-Shop</h1>
+        <h2 id="loading">Loading..</h2>
+        <div class="main__cards">
+            
+        </div>
+        <div class="pagination">
+            <span id="first">1</span>
+            <span id="second">2</span>
+            <span id="third">3</span>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contacts">
+        <div class="footer__inner">
+            <div class="footer__logo">
+                <img src="/images/logo.avif" alt="logo">
+                <span>Api-Shop</span>
+            </div>
+            <div class="footer__text">
+                <p>Copyright © 2025 Api-Shop. All rights reserved.</p>
+            </div>
+            <div class="footer__links">
+                <a href="#home">Home</a>
+                <a href="#products">Products</a>
+                <a href="#about">About</a>
+                <a href="#contacts">Contacts</a>
+            </div>
+            <div class="footer__social">
+                <a style="text-decoration: none; color: black" href="https://www.youtube.com" target="_blank"> 
+                    <svg class="footer__social-icon" width="24" height="24" style="fill:red" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M19.6069 6.99482C19.5307 6.69695 19.3152 6.47221 19.0684 6.40288C18.6299 6.28062 16.501 6 12.001 6C7.50098 6 5.37252 6.28073 4.93225 6.40323C4.68776 6.47123 4.4723 6.69593 4.3951 6.99482C4.2863 7.41923 4.00098 9.19595 4.00098 12C4.00098 14.804 4.2863 16.5808 4.3954 17.0064C4.47126 17.3031 4.68676 17.5278 4.93251 17.5968C5.37252 17.7193 7.50098 18 12.001 18C16.501 18 18.6299 17.7194 19.0697 17.5968C19.3142 17.5288 19.5297 17.3041 19.6069 17.0052C19.7157 16.5808 20.001 14.8 20.001 12C20.001 9.2 19.7157 7.41923 19.6069 6.99482ZM21.5442 6.49818C22.001 8.28 22.001 12 22.001 12C22.001 12 22.001 15.72 21.5442 17.5018C21.2897 18.4873 20.547 19.2618 19.6056 19.5236C17.8971 20 12.001 20 12.001 20C12.001 20 6.10837 20 4.39637 19.5236C3.45146 19.2582 2.70879 18.4836 2.45774 17.5018C2.00098 15.72 2.00098 12 2.00098 12C2.00098 12 2.00098 8.28 2.45774 6.49818C2.71227 5.51273 3.45495 4.73818 4.39637 4.47636C6.10837 4 12.001 4 12.001 4C12.001 4 17.8971 4 19.6056 4.47636C20.5505 4.74182 21.2932 5.51636 21.5442 6.49818ZM10.001 15.5V8.5L16.001 12L10.001 15.5Z"></path></svg></a>
+                <a href="https://www.facebook.com" target="_blank">
+                    <svg class="footer__social-icon" width="24" height="24" style="fill:blue" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M14 19H19V5H5V19H12V14H10V12H12V10.3458C12 9.00855 12.1392 8.52362 12.4007 8.03473C12.6622 7.54584 13.0458 7.16216 13.5347 6.9007C13.9174 6.69604 14.3922 6.57252 15.2217 6.51954C15.551 6.49851 15.9771 6.52533 16.5 6.6V8.5H16C15.0827 8.5 14.7042 8.54332 14.4779 8.66433C14.3376 8.73939 14.2394 8.83758 14.1643 8.97793C14.0433 9.20418 14 9.42853 14 10.3458V12H16.5L16 14H14V19ZM4 3H20C20.5523 3 21 3.44772 21 4V20C21 20.5523 20.5523 21 20 21H4C3.44772 21 3 20.5523 3 20V4C3 3.44772 3.44772 3 4 3Z"></path></svg>
+                </a>
+                <a href="https://instagram.com">
+                    <svg class="footer__social-icon" width="24" height="24" style="fill:green" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M15.3499 5.55005C13.7681 5.55005 12.4786 6.81809 12.4504 8.39658L12.4223 9.97162C12.4164 10.3029 12.143 10.5667 11.8117 10.5608C11.7881 10.5604 11.7646 10.5586 11.7413 10.5554L10.1805 10.3426C8.12699 10.0625 6.15883 9.11736 4.27072 7.54411C3.67275 10.8538 4.84 13.1472 7.65342 14.916L9.40041 16.0142C9.68095 16.1906 9.7654 16.561 9.58903 16.8415C9.54861 16.9058 9.49636 16.9619 9.43504 17.0067L7.84338 18.1696C8.78973 18.229 9.68938 18.1875 10.435 18.0387C15.1526 17.0973 18.2897 13.547 18.2897 7.69109C18.2897 7.213 17.2774 5.55005 15.3499 5.55005ZM10.4507 8.3609C10.4983 5.69584 12.6735 3.55005 15.3499 3.55005C16.7132 3.55005 17.9465 4.10683 18.8348 5.0054C19.5462 5.00005 20.1514 5.17991 21.5035 4.35967C21.1693 6.00005 21.0034 6.71201 20.2897 7.69109C20.2897 15.3326 15.5926 19.0489 10.8264 20C7.5587 20.6522 2.80646 19.5815 1.44531 18.1587C2.13874 18.1054 4.95928 17.802 6.58895 16.6092C5.20994 15.6987 -0.278631 12.4681 3.32772 3.78642C5.02119 5.76307 6.73797 7.10855 8.47807 7.82286C9.63548 8.29798 9.91978 8.2885 10.4507 8.3609Z"></path></svg>
+                </a>
+            </div>
+            <div class="footer__contact">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Java-Script file -->
+    <script src="/js/home.js"></script>
+</body>
+</html>

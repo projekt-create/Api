@@ -1,0 +1,31 @@
+// Global styles
+@import '_global.scss';
+@import '_mixins.scss';
+@import '_variables.scss';
+
+// Home page styles
+@import '_header.scss';
+@import '_main.scss';
+@import '_footer.scss';
+
+// Cart page styles
+@import '_cart.scss';
+@import '_comments.scss';
+
+// Login page styles
+@import '_login.scss';
+
+// Register page styles
+@import '_register.scss';
+
+// Admin page styles
+@import '_admin.scss';
+@import '_header-admin.scss';
+@import '_info-admin.scss';
+@import '_footer-admin.scss';
+
+// Basket page styles
+@import '_basket.scss';
+
+// Media queries
+@import '_media.scss';
